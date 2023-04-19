@@ -123,3 +123,4 @@ async def global_text(ctx, *, message: str):
 
 
 bot.run(os.getenv('TOKEN'))
+
