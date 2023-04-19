@@ -34,7 +34,6 @@ async def status(ctx):
 async def checkTime(ctx):
     DataObj = f"{ServerData['time']['hours']}:{ServerData['time']['minutes']}:{ServerData['time']['seconds']}"
     await ctx.send(DataObj)
-
 #Это я реализую потом нормально, как работа с данными будет нормальная
 @bot.command()
 async def time(ctx, hours, minutes, seconds):
@@ -74,5 +73,7 @@ async def global_text(ctx, *, message: str):
         await ctx.send(f"Сообщение {message} было отправлено в глобальный чат.")
     else:
         await ctx.send(f"У вас нет прав к данной команде.")
+
+
 
 bot.run(config['token'])
